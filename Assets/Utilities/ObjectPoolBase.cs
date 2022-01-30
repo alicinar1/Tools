@@ -43,7 +43,7 @@ namespace Utilities.ObjectPool
         {
             for (int i = 0; i < poolSize; i++)
             {
-                var obj = Instantiate(gameObjectArray[i], Vector3.zero, Quaternion.identity, parent);
+                var obj = Instantiate(gameObjectArray[0], Vector3.zero, Quaternion.identity, parent);
                 obj.gameObject.SetActive(false);
                 objectQueue.Enqueue(obj);
             }
